@@ -6,6 +6,10 @@ RSpec.describe TonyDemoGem do
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    expect(TonyDemoGem::Hola.hi).to eq("hello world")
+  end
+
+  it "does something useful" do
+    expect(TonyDemoGem::Hola.hi("spanish")).to eq("hola mundo")
   end
 end
